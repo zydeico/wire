@@ -52,8 +52,6 @@ The Android *sync engine* is developed in Scala.
 
 Wire's web application (called “Wire for Web”) is a web application which runs in modern browsers (Chrome, Edge, Firefox & Opera). It's core is written in CoffeeScript and automatically transpiled into JavaScript. Wire for Windows and Wire for OS X are native applications powered by [Electron](http://electron.atom.io/) and embedding (wrapping) Wire's web application.
 
-The cryptography libraries used in Wire for Web are the following:
-
 ### Repositories
 
 - [cbor-codec.js](https://github.com/wireapp/cbor-codec.js): JavaScript implementation of [CBOR](http://cbor.io/) 
@@ -61,6 +59,7 @@ The cryptography libraries used in Wire for Web are the following:
 - [cryptobox.js](https://github.com/wireapp/cryptobox.js): API layer for Proteus
 - [libsodium.js](https://github.com/wireapp/libsodium.js): JavaScript implementation of [Sodium](https://download.libsodium.org/doc/), with convenient wrappers 
 - [proteus.js](https://github.com/wireapp/proteus.js): Implementation of the Axolotl protocol
+- [node-addressbook](https://github.com/wireapp/node-addressbook): Node.js module providing access to the OSX address book
 
 ### Dependencies
 
