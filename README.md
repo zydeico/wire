@@ -36,6 +36,7 @@ The iOS sync engine is developed in a mix of Objective-C and Swift (and just a h
 - [zmc-mocktransport](https://github.com/wireapp/zmc-mocktransport): simulates the entire network component (including backend behaviour) for testing purposes
 - [zmc-images](https://github.com/wireapp/zmc-images): performs rotation and scaling of images
 - [zmc-cryptobox](https://github.com/wireapp/zmc-cryptobox): higher level convenience wrappers around cryptobox for iOS
+- [zmc-data-model](https://github.com/wireapp/zmc-data-model): Core Data model and entity classes
 - [cryptobox-ios](https://github.com/wireapp/cryptobox-ios): iOS binaries for cryptobox
 
 ## Android
