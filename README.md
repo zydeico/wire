@@ -1,70 +1,33 @@
-# What is *Wire*
+# Wire™
 
-[Wire](https://wire.com) is a an app for modern, private communications. It offers text, voice, video and sending media, and all user communication on Wire is end-to-end encrypted. It is available for iOS, Android, OS X, Windows, and modern web browsers.
+![Wire logo](https://github.com/wireapp/wire/blob/master/assets/logo.png?raw=true)
 
-We've released components of the app that take care of encryption and data handling as Open Source.
+# Open source
 
 The [privacy page](https://wire.com/privacy/) and the [privacy](https://wire.com/resource/Wire%20Privacy%20Whitepaper/download/) and [security](https://wire.com/resource/Wire%20Security%20Whitepaper/download/) whitepapers explain the details of the encryption algorithms and protocols used.
 
-# Wire architecture
+For licensing information, see the attached LICENSE file and the list of third-party licenses at [wire.com/legal/licenses/](https://wire.com/legal/licenses/).
 
-The Wire mobile app has an architectural layer that we call *sync engine*. It is the client-side layer that processes all the data that is displayed in the mobile app. It handles network communication and authentication with the backend, push notifications, local caching of data, client-side business logic, signaling with the audio-video libraries, encryption and decryption (using encryption libraries from a lower level) and other bits and pieces.
+If you compile the open source software that we make available from time to time to develop your own mobile, desktop or web application, and cause that application to connect to our servers for any purposes, we refer to that resulting application as an “Open Source App”.  All Open Source Apps are subject to, and may only be used and/or commercialized in accordance with, the Terms of Use applicable to the Wire Application, which can be found at https://wire.com/legal/#terms.  Additionally, if you choose to build an Open Source App, certain restrictions apply, as follows:
 
-The user interface layer of the mobile app is built on top of the *sync engine*, which provides the data to display to the UI.
-The sync engine itself is built on top of a few third-party frameworks, and uses Wire components that are shared between platforms for cryptography (Proteus/Cryptobox) and audio-video signaling (AVS).
+a. You agree not to change the way the Open Source App connects and interacts with our servers; b. You agree not to weaken any of the security features of the Open Source App; c. You agree not to use our servers to store data for purposes other than the intended and original functionality of the Open Source App; d. You acknowledge that you are solely responsible for any and all updates to your Open Source App. 
 
-![Mobile app architecture](/assets/mobile-architecture.png?raw=true "Mobile app architecture")
+For clarity, if you compile the open source software that we make available from time to time to develop your own mobile, desktop or web application, and do not cause that application to connect to our servers for any purposes, then that application will not be deemed an Open Source App and the foregoing will not apply to that application.
 
-We are looking into releasing more components in the future. For the moment, we provide source code for encryption (Proteus/Cryptobox) and data handling (Sync Engine and AVS).
+No license is granted to the Wire trademark and its associated logos, all of which will continue to be owned exclusively by Wire Swiss GmbH. Any use of the Wire trademark and/or its associated logos is expressly prohibited without the express prior written consent of Wire Swiss GmbH.
+
+# Build your own Wire client
 
 ## iOS
-
-*ZMessaging-cocoa* is the top-most layer of the iOS *sync engine*, and it is using on a number of lower-level frameworks. *ZMessaging-cocoa* and the lower-lever frameworks constitute the iOS *sync engine*, as illustrated in the following picture.
-
-![iOS architecture](/assets/ios-architecture.png?raw=true "iOS architecture")
-
-The iOS sync engine is developed in a mix of Objective-C and Swift (and just a handful of classes in Objective-C++). It is a result of a long development process that was started in Objective-C when Swift was not yet available. In the past year, parts of it have been written or rewritten in Swift. Going forward, expect new functionalities to be developed almost exclusively in Swift.
-
-### Repositories
-
-- [zmessaging-cocoa](https://github.com/wireapp/zmessaging-cocoa): topmost layer that implements client-side business logic, caching, encryption and client-side backend communication protocol
-- [zmc-utilities](https://github.com/wireapp/zmc-utilities): implements common data structures, algorithms (such as symmetric encryption) and application environment detection (internal or public build / production or staging backend)
-- [zmc-system](https://github.com/wireapp/zmc-system): covers interaction with ASL (Apple logging), profiling and wrappers of some foundation/cocoa classes
-- [zmc-transport](https://github.com/wireapp/zmc-transport): abstracts the network communication with the backend: handles authentication of requests, network failures and retries transparently
-- [zmc-testing](https://github.com/wireapp/zmc-testing): testing utilities
-- [zmc-protos](https://github.com/wireapp/zmc-protos): precompiled protocol buffer definitions for objective-c / swift and some convenience methods around them
-- [zmc-mocktransport](https://github.com/wireapp/zmc-mocktransport): simulates the entire network component (including backend behaviour) for testing purposes
-- [zmc-images](https://github.com/wireapp/zmc-images): performs rotation and scaling of images
-- [zmc-cryptobox](https://github.com/wireapp/zmc-cryptobox): higher level convenience wrappers around cryptobox for iOS
-- [zmc-data-model](https://github.com/wireapp/zmc-data-model): Core Data model and entity classes
-- [cryptobox-ios](https://github.com/wireapp/cryptobox-ios): iOS binaries for cryptobox
+https://github.com/wire-ios
 
 ## Android
+https://github.com/wire-android
 
-The Android *sync engine* is developed in Scala.
+## Wire for Web
+https://github.com/wire-ios
 
-### Repositories
-
-- [zmessaging-android](https://github.com/wireapp/zmessaging-android): Sync engine library for Android, in Scala
-- [cryptobox-jni](https://github.com/wireapp/cryptobox-jni): JNI bindings for cryptobox with support for cross-compilation to Android
-
-
-## Web App & Native Apps
-
-Wire's web application (called “Wire for Web”) is a web application which runs in modern browsers (Chrome, Edge, Firefox & Opera). It's core is written in CoffeeScript and automatically transpiled into JavaScript. Wire for Windows and Wire for OS X are native applications powered by [Electron](http://electron.atom.io/) and embedding (wrapping) Wire's web application.
-
-### Repositories
-
-- [cbor-codec.js](https://github.com/wireapp/cbor-codec.js): JavaScript implementation of [CBOR](http://cbor.io/) 
-- [cryptobox-bower](https://github.com/wireapp/cryptobox-bower): Redistributables of Cryptobox
-- [cryptobox.js](https://github.com/wireapp/cryptobox.js): API layer for Proteus
-- [libsodium.js](https://github.com/wireapp/libsodium.js): JavaScript implementation of [Sodium](https://download.libsodium.org/doc/), with convenient wrappers 
-- [proteus.js](https://github.com/wireapp/proteus.js): Implementation of the Axolotl protocol
-- [node-addressbook](https://github.com/wireapp/node-addressbook): Node.js module providing access to the OSX address book
-
-### Dependencies
-
-[cryptobox-bower](https://github.com/wireapp/cryptobox-bower) → [cryptobox.js](https://github.com/wireapp/cryptobox.js) → [proteus.js](https://github.com/wireapp/proteus.js) → [libsodium.js](https://github.com/wireapp/libsodium.js) & [cbor-codec.js](https://github.com/wireapp/cbor-codec.js)
+# Components
 
 ## AVS
 
