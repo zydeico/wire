@@ -44,7 +44,6 @@ The Axolotl protocol implementation and other cryptographic and utility librarie
 ### Repositories
 
 - [proteus](https://github.com/wireapp/proteus): Axolotl Protocol Implementation in Rust, then cross compiled for iOS and Android
-- [libsodium](https://github.com/wireapp/libsodium): A modern and easy-to-use crypto library. 
 - [cryptobox](https://github.com/wireapp/cryptobox): High-level API with persistent storage for proteus
 - [cryptobox-haskell](https://github.com/wireapp/cryptobox-haskell): Haskell bindings to cryptobox
 - [cryptobox-c](https://github.com/wireapp/cryptobox-c): C-FFI to cryptobox 
