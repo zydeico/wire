@@ -19,13 +19,13 @@ No license is granted to the Wire trademark and its associated logos, all of whi
 # Build your own Wire client
 
 ## iOS
-https://github.com/wire-ios
+See [wire-ios](https://github.com/wireapp/wire-ios)
 
 ## Android
-https://github.com/wire-android
+See [wire-android](https://github.com/wireapp/wire-android)
 
 ## Wire for Web
-https://github.com/wire-ios
+See [wire-webapp](https://github.com/wireapp/wire-webapp)
 
 # Components
 
