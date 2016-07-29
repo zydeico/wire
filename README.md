@@ -58,3 +58,15 @@ Protocol buffer definitions are used by all clients to communicate with each oth
 - [generic-message-proto](https://github.com/wireapp/generic-message-proto): Protocol buffer definitions that are part of the cross-platform client communication protocol
 - [backend-api-protobuf](https://github.com/wireapp/backend-api-protobuf): Protocol buffer definitions that are part of the backend communication protocol 
 
+# Contributions
+
+You can contribute to Wire in several ways:
+
+## Finding bugs
+
+If you find a bug in how Wire apps work, please submit a ticket to [our support](https://wire.com/support) and we will keep you informed about the progress.
+
+## Contributing to the code
+
+If you wish to contribute source code to one of our repositories you have to sign our [Contributor Agreement](https://github.com/wireapp/wire/raw/master/assets/Wire%20Contributor%20Agreement.pdf) first.
+Please [download](https://github.com/wireapp/wire/raw/master/assets/Wire%20Contributor%20Agreement.pdf) the agreement, fill in all required information and send it to opensource@wire.com. After that we will shortly be able to accept your Pull Requests on GitHub.
