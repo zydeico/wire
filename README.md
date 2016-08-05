@@ -24,6 +24,9 @@ See [wire-ios](https://github.com/wireapp/wire-ios)
 ## Android
 See [wire-android](https://github.com/wireapp/wire-android)
 
+## Desktop
+See [wire-desktop](https://github.com/wireapp/wire-desktop)
+
 ## Wire for Web
 See [wire-webapp](https://github.com/wireapp/wire-webapp)
 
