@@ -52,6 +52,10 @@ The Axolotl protocol implementation and other cryptographic and utility librarie
 - [cryptobox-c](https://github.com/wireapp/cryptobox-c): C-FFI to cryptobox 
 - [hkdf](https://github.com/wireapp/hkdf): HKDF implementation (RFC 5869) in Rust, then cross compiled to iOS and Android
 
+## Server
+
+The Wire server components can be found in the [wire-server](https://github.com/wireapp/wire-server) repository.
+
 ## Common definitions
 
 Protocol buffer definitions are used by all clients to communicate with each other and with the backend.
