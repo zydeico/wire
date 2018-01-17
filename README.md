@@ -77,9 +77,11 @@ If you find a bug in how Wire apps work, please submit a ticket to [our support]
 
 If you wish to contribute source code to one of our repositories you have to sign our [Contributor Agreement](https://github.com/wireapp/wire/raw/master/assets/Wire%20Contributor%20Agreement.pdf) first.
 
+We accept only bug fixes and code improvements. We cannot accept new features, UI or UX changes – these are decided on and built by the Wire development team.
+
 When you submit your first pull request, you can sign the agreement electronically by filling in the required information. You will not have to sign it again for subsequent pull requests from the same GitHub account.
 
 ## Translating the apps
 
-You can help with the crowdsourced translations from Wire Apps on [Crowdin](https://crowdin.com/projects/wire).
+You can help with the crowdsourced translations of Wire apps on [Crowdin](https://crowdin.com/projects/wire).
 
