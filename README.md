@@ -4,7 +4,7 @@
 
 # Open source
 
-The [privacy page](https://wire.com/privacy/) and the [privacy](https://wire.com/resource/Wire%20Privacy%20Whitepaper/download/) and [security](https://wire.com/resource/Wire%20Security%20Whitepaper/download/) whitepapers explain the details of the encryption algorithms and protocols used.
+The [privacy page](https://wire.com/privacy/) and the [privacy](https://wire-docs.wire.com/download/Wire+Privacy+Whitepaper.pdf) and [security](https://wire-docs.wire.com/download/Wire+Security+Whitepaper.pdf) whitepapers explain the details of the encryption algorithms and protocols used.
 
 For licensing information, see the attached LICENSE file and the list of third-party licenses at [wire.com/legal/licenses/](https://wire.com/legal/licenses/).
 
